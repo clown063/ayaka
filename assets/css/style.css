@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "Amsterdam Four ttf";
+    src: url(../font/amsterdam-four-ttf.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: auto;
+    font-family: 'Old Standard TT', serif;
+}
+body {
+    position: relative;
+    top: 0;
+}
+#header-height {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.header-nav a {
+    text-transform: uppercase;
+    font-family: 'Old Standard TT', serif;
+}
+.s1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    overflow: hidden;
+}
+.s1-img-frame {
+    background-color: #fff6ea;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 2;
+}
+.s1-img-frame img {
+    width: 100%;
+    height: auto;
+    animation: fading 8s infinite ease-in-out;
+    z-index: 1;
+}
+@keyframes fading { 
+    0% {opacity:0}
+    10% {opacity:1}
+    90% {opacity: 1}
+    100% {opacity:0}
+}
+.s1-title {
+    position: absolute;
+    bottom: 3%;
+    left: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    z-index: 2;
+    gap: 0;
+}
+.s1-title h1 {
+    font-family: "Amsterdam Four ttf";
+    font-size: 6vw;
+    font-weight: 100;
+}
+.s1-title p {
+    width: 67%;
+    font-size: 2vw;
+    text-transform: uppercase;
+    padding-top: 8%;
+}
