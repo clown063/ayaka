@@ -27,6 +27,8 @@ body {
     text-transform: uppercase;
     font-family: 'Old Standard TT', serif;
 }
+
+/* S1 */
 .s1 {
     position: relative;
     top: 0;
@@ -34,23 +36,25 @@ body {
     width: 100%;
     height: 100vh;
     z-index: 1;
-    overflow: hidden;
 }
 .s1-img-frame {
-    background-color: #fff6ea;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    align-items: flex-end;
+    background-color: #fff6ea;
     width: 100%;
     height: 100vh;
     overflow: hidden;
     z-index: 2;
 }
-.s1-img-frame img {
+.s1-img-frame div {
     width: 100%;
-    height: auto;
-    animation: fading 8s infinite ease-in-out;
+    height: 92%;
+    -webkit-animation: fading 8s infinite ease-in-out;
+            animation: fading 8s infinite ease-in-out;
     z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 @keyframes fading { 
     0% {opacity:0}
@@ -83,7 +87,7 @@ body {
 }
 /* s2 */
 .s2 {
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 /* left */
@@ -93,11 +97,6 @@ body {
     align-items: center;
     flex-direction: column;
     width: 50%;
-}
-@media screen and (max-width: 768px) {
-    .left {
-        width: 80%;
-    }
 }
 .name h1 {
     font-family: "Amsterdam Four ttf";
@@ -134,6 +133,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10%;
+    width: 100%;
 }
 .s2-nav a {
     display: flex;
@@ -191,7 +191,6 @@ body {
     width: 50%;
     height: 60%;
     overflow: hidden;
-    border: 2px solid red;
 }
 .s3-img-frame img {
     width: auto;

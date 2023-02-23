@@ -15,3 +15,16 @@ function swapImages() {
     s1_imgs[topIndex - 1].style.display = "block";
     setTimeout(swapImages, 8000);
 }
+
+// Responsive Design
+var screenW = window.screen.width;
+if (screenW < 767) {
+    new fullpage('#fullpage', {
+        //options here
+        autoScrolling: true,
+        navigation: false,
+        anchors: ['home', 'about-me', 'profile', 'career-background', 'portfolio', 'contact'],
+        menu: '#header-nav',
+        normalScrollElements: '#s3-container'
+    });
+}

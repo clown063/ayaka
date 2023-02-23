@@ -1,0 +1,64 @@
+/* md */
+@media screen and (max-width: 991px) {
+    /* S1 */
+    .s1-title h1 {
+        font-size: 4.3rem;
+    }
+    .s1-title p {
+        font-size: 1.4rem;
+    }
+}
+/* s */
+@media screen and (max-width: 767px) {
+    /* S2 */
+    .left {
+        width: 80%;
+        height: 100%;
+        min-height: 750px;
+    }
+    .s3-right {
+        align-items: center;
+        margin-top: 10vh;
+        width: 100%;
+        height: 90%;
+        min-height: 750px;
+    }
+}
+/* xs */
+@media screen and (max-width: 575px) {
+    /* Smallest Width: 320px */
+    /* S1 */
+    .s1-title h1 {
+        font-size: 3rem;
+    }
+    .s1-title p {
+        font-size: 1rem;
+    }
+    /* S2 */
+    .left {
+        align-items: flex-start;
+        width: 100%;
+        min-height: 600px;
+    }
+    .name h1 {
+        font-size: 3.8rem;
+    }
+    .name.s2-name, .name.s2-name h1 {
+        display: none;
+    }
+    .brief-profiles, .brief-profile ul {
+        align-items: flex-start;
+    }
+    .s2-nav ul, .s2-nav a  {
+        justify-content: flex-start;
+    }
+    .brief-profile.sm {
+        font-size: 1.2rem;
+    }
+    .brief-profile.lg {
+        font-size: 1.2rem;
+    }
+    .s2-nav a {
+        font-size: 1.694rem;
+    }
+}
