@@ -2,7 +2,7 @@
 include 'assets/php/components/head.php';
 include 'assets/php/components/nav.php';
 ?>
-<div id="fullpage">
+<div id="fullpage" data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0">
     <?php
     include 'assets/php/components/s1.php';
     include 'assets/php/components/s2.php';
@@ -87,7 +87,7 @@ include 'assets/php/components/nav.php';
                         </div>
                     </div>
                     <div class="profile-contents">
-                        <div class="tiles">
+                        <div class="tiles bottom">
                             <div class="tiles-title">
                                 <h2>コンポジット</h2>
                             </div>
@@ -116,17 +116,6 @@ include 'assets/php/components/nav.php';
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- JavaScript -->
 <script src="assets/js/script.js"></script>
-<script>
-    new fullpage('#fullpage', {
-        //options here
-        autoScrolling: true,
-        navigation: true,
-        anchors: ['home', 'about-me', 'profile', 'career-background', 'portfolio', 'contact'],
-        menu: '#header-nav',
-        navigationTooltips: ['HOME', 'ABOUT ME', 'PROFILE', 'CAREER BACKGROUND', 'PORTFOLIO', 'CONTACT'],
-        normalScrollElements: '#s3-container'
-    });
-</script>
 </body>
 
 </html>
