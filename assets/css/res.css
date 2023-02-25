@@ -35,6 +35,11 @@
 }
 /* xs */
 @media screen and (max-width: 575px) {
+    #navbar {
+        display: none;
+        z-index: -10;
+        visibility: hidden;
+    }
     /* Smallest Width: 320px */
     /* S1 */
     .s1-title h1 {
@@ -70,7 +75,11 @@
     /* S3 */
     .s3-right {
         min-height: 650px;
+        margin-top: 0;
     }
+     .s3-container {
+         overflow-y: scroll;
+     }
     .s3-title {
         margin-left: 0;
     }
