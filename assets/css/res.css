@@ -1,3 +1,60 @@
+
+/* lg */
+@media screen and (max-width: 1199px) {
+    /* 0.78 */
+
+    /* S3 */
+    /* LEFT */
+    .s3-img-frame {
+        margin-top: 80px;
+        width: 250px;
+    }
+    .name p {
+        font-size: 1rem;
+    }
+    /* RIGHT */
+    .s3-title h1 {
+        font-size: 3.12rem;
+    }
+    .s3-title-p {
+        padding-top: 31.2px;
+    }
+    .tiles-title {
+        height: 6.24px;
+        padding: 1rem 0;
+    }
+    .tiles-title h2 {
+        font-size: 1rem;
+    }
+    .tiles-p-container {
+        padding: 0.7rem 0;
+    }
+    .tiles-p p {
+        font-size: 1rem;
+    }
+    /* S4 */
+    .s4-title {
+        margin-top: 15.6px;
+        margin-bottom: 46.8px;
+    }
+    .s4-title h1 {
+        font-size: 3.15rem;
+    }
+    .bg-title {
+        height: 39.6px;
+    }
+    .bg-title h2 {
+        padding-right: 3.9px;
+        font-size: 1.2rem;
+    }
+    .bg-title::after {
+        height: 1.6px;
+    }
+    .bg-text ul li {
+        font-size: 0.9rem;
+    }
+}
+
 /* md */
 @media screen and (max-width: 991px) {
     /* S1 */
@@ -6,6 +63,27 @@
     }
     .s1-title p {
         font-size: 1.4rem;
+    }
+    /* S4 */
+    .s4-title {
+        margin-top: 13.6px;
+        margin-bottom: 40.7px;
+    }
+    .s4-title h1 {
+        font-size: 2.4rem;
+    }
+    .bg-title {
+        height: 34.5px;
+    }
+    .bg-title h2 {
+        padding-right: 3.4px;
+        font-size: 1.2rem;
+    }
+    .bg-title::after {
+        height: 1.392px;
+    }
+    .bg-text ul li {
+        font-size: 1rem;
     }
 }
 /* s */
@@ -22,15 +100,50 @@
         width: 100%;
         height: 100%;
         min-height: 750px;
-        overflow: scroll;
+        overflow: visible;
     }
     .s3-container {
         width: 100%;
         height: 100%;
         overflow: visible;
+        margin-top: 80px;
     }
     .s3-title {
         margin-left: 30px;
+    }
+    /* S4 */
+    .s4-left {
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        min-height: 750px;
+        overflow: visible;
+        margin-top: 55px;
+    }
+    .s4-container {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+    }
+    .s4-title {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .s4-title h1 {
+        font-size: 3.8rem;
+    }
+    .bg-title {
+        height: 50px;
+    }
+    .bg-title h2 {
+        padding-right: 5px;
+        font-size: 1.5rem;
+    }
+    .bg-title::after {
+        height: 2px;
+    }
+    .bg-text ul li {
+        font-size: 1.2rem;
     }
 }
 /* xs */
@@ -73,13 +186,9 @@
         font-size: 1.694rem;
     }
     /* S3 */
-    .s3-right {
-        min-height: 650px;
+    .s3-container {
         margin-top: 0;
     }
-     .s3-container {
-         overflow-y: scroll;
-     }
     .s3-title {
         margin-left: 0;
     }
@@ -102,5 +211,67 @@
     }
     .tiles-p p {
         font-size: 1rem;
+    }
+    /* S4 */
+    .s4-left {
+        min-height: 650px;
+        margin-top: 0;
+    }
+    .s4-title {
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+    .s4-title h1 {
+        font-size: 3rem;
+    }
+    .bg-title {
+        height: 39px;
+    }
+    .bg-title h2 {
+        padding-right: 3.9px;
+        font-size: 1.17rem;
+    }
+    .bg-title::after {
+        height: 1.56px;
+    }
+    .bg-text ul li {
+        font-size: 0.936rem;
+    }
+    /* S5 */
+    #navbar.port {
+        display: block;
+        z-index: 1000;
+        visibility: visible;
+    }
+    .enlarged-img {
+        max-width: 70%;
+        max-height: 70%;
+    }
+}
+@media screen and (max-width: 450px) {
+    /* S4 */
+    .s4-left {
+        min-height: 650px;
+        margin-top: 0;
+    }
+    .s4-title {
+        margin-top: 15px;
+        margin-bottom: 18px;
+    }
+    .s4-title h1 {
+        font-size: 2rem;
+    }
+    .bg-title {
+        height: 23.4px;
+    }
+    .bg-title h2 {
+        padding-right: 2.34px;
+        font-size: 0.9rem;
+    }
+    .bg-title::after {
+        height: 0.93px;
+    }
+    .bg-text ul li {
+        font-size: 0.8rem;
     }
 }
