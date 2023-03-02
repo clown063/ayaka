@@ -27,8 +27,8 @@ $(function () {
             var imgSrc = $(this).attr('href');
             index = images.index(this);
             $('#port-gallery').append('<div class="overlay"></div><img src="' + imgSrc + '" class="enlarged-img"><i class="bi bi-chevron-left arrow arrow-left"></i><i class="bi bi-chevron-right arrow arrow-right"></i>');
-            $('.overlay, .enlarged-img').fadeIn('fast');
-            $('#navbar').css('z-index', '0');
+            $('.overlay, .enlarged-img, .arrow').fadeIn('fast');
+            $('#navbar').css('z-index', '998');
         });
 
         $('#port-gallery').on('click', '.enlarged-img', function () {
@@ -38,7 +38,7 @@ $(function () {
         });
 
         $('#port-gallery').on('click', '.overlay', function () {
-            $('.overlay, .enlarged-img').fadeOut('fast', function () {
+            $('.overlay, .enlarged-img, .arrow').fadeOut('fast', function () {
                 $(this).remove();
                 $('#navbar').css('z-index', '1000');
             });

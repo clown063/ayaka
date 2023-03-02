@@ -561,6 +561,7 @@ body {
     color: white;
     cursor: pointer;
     z-index: 1200;
+    display: none;
 }
 .arrow-right {
     right: 10px;
