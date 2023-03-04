@@ -35,7 +35,7 @@
                         </ul>
                     </li>
                     <li class="nav-item me-3 nav-li" data-menuanchor="contact">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="navs nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>

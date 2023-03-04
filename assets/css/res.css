@@ -91,6 +91,7 @@
     /* S2 */
     .left {
         width: 80%;
+        height: 100dvh;
         height: 100%;
         min-height: 750px;
     }
@@ -145,14 +146,13 @@
     .bg-text ul li {
         font-size: 1.2rem;
     }
+    /* S5 */
+    .video-player iframe {
+        width: 90%;
+    }
 }
 /* xs */
 @media screen and (max-width: 575px) {
-    #navbar {
-        display: none;
-        z-index: -10;
-        visibility: hidden;
-    }
     /* Smallest Width: 320px */
     /* S1 */
     .s1-title h1 {
@@ -186,9 +186,6 @@
         font-size: 1.694rem;
     }
     /* S3 */
-    .s3-container {
-        margin-top: 0;
-    }
     .s3-title {
         margin-left: 0;
     }
@@ -215,7 +212,6 @@
     /* S4 */
     .s4-left {
         min-height: 650px;
-        margin-top: 0;
     }
     .s4-title {
         margin-top: 25px;
@@ -238,11 +234,6 @@
         font-size: 0.936rem;
     }
     /* S5 */
-    #navbar.port {
-        display: block;
-        z-index: 1000;
-        visibility: visible;
-    }
     .enlarged-img {
         max-width: 100%;
         max-height: 100%;

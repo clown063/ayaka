@@ -25,15 +25,21 @@ include 'assets/php/components/nav.php';
     <?php if ($page == "movie"): ?>
         <div class="s5-container">
             <div class="s5-title">
-                <h1>Beauty</h1>
+                <h1>Movie</h1>
             </div>
             <div class="s5-contents">
-                <div class="s5-img-frame movie">
-                    <iframe width="560" height="315" src="https://youtube.com/shorts/ZyLCi3p4J9Q?feature=share"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                <?php $videos = ['bXwoQD3NOr8', 'SCS0bZucQ20', 'bXwoQD3NOr8', 'SCS0bZucQ20', 'bXwoQD3NOr8', 'SCS0bZucQ20', 'bXwoQD3NOr8', 'SCS0bZucQ20', 'bXwoQD3NOr8', 'SCS0bZucQ20', 'bXwoQD3NOr8', 'SCS0bZucQ20'];
+                $video_caps = ['クマのプーさん、実はダイエット中？', 'パンダの大好物はパンデミック？', '私、脳みそよりもお腹が賢いんです', '私の人生哲学：ピザは常に正解！', '人生は短い。だから、常にクッキーを食', '夢中になれることを見つけよう！', 'クマのプーさん、実はダイエット中？', 'パンダの大好物はパンデミック？', '私、脳みそよりもお腹が賢いんです', '私の人生哲学：ピザは常に正解！', '人生は短い。だから、常にクッキーを食', '夢中になれることを見つけよう！'];
+                for ($i = 0; $i < COUNT($videos); $i ++):?>
+                <div class="s5-video-frame">
+                    <a class="video-link" href="https://www.youtube.com/embed/<?php echo $videos[$i] ?>?modestbranding=1">
+                        <img src="https://img.youtube.com/vi/<?php echo $videos[$i] ?>/maxresdefault.jpg">
+                        <div><i class="bi bi-play-circle s5-play-icon"></i></div>
+                    </a>
+                    <!-- 18 letters limitation -->
+                    <p><?php echo $video_caps[$i] ?></p>
                 </div>
+                <?php endfor; ?>
             </div>
         </div>
     <?php endif; ?>

@@ -67,8 +67,11 @@ body {
 }
 
 .s1-imgs {
+    position: absolute;
+    top: 50px;
+    left: 0;
     width: 100%;
-    height: 100dvh;
+    height: calc(100dvh - 50px);
     -webkit-animation: fading 8s infinite ease-in-out;
     animation: fading 8s infinite ease-in-out;
     background-repeat: no-repeat;
@@ -97,9 +100,9 @@ body {
 
 .s1-bg {
     position: absolute;
-    top: 0;
+    top: 50px;
     left: 0;
-    height: 100dvh;
+    height: calc(100dvh - 50px);
     width: 100%;
     background-color: #fff6ea;
     z-index: -2;
@@ -378,7 +381,7 @@ body {
 
 /* S4 */
 
-.s4 {
+.s4, .s5 {
     height: 100dvh;
     width: 100%;
 }
@@ -391,9 +394,7 @@ body {
 }
 
 .s4-container {
-    position: relative;
-    top: 15%;
-    transform: translateY(-15%);
+    margin-top: 60px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -528,6 +529,53 @@ body {
     height: auto;
 }
 
+.s5-video-frame {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.s5-video-frame a {
+    position: relative;
+    width: 25vw;
+    max-width: 410px;
+    min-width: 310px;
+    aspect-ratio: 16 / 9;
+}
+
+.s5-video-frame a img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.s5-video-frame a div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s5-play-icon {
+    visibility: hidden;
+    font-size: 5rem;
+    color: #f0f0f0;
+}
+.s5-video-frame p {
+    color: #815b43;
+    font-size: 1rem;
+}
+
+
+/* Photo Gallery */
+
 .overlay {
     position: fixed;
     top: 0;
@@ -549,10 +597,12 @@ body {
     z-index: 1000;
     display: none;
 }
+
 #port-gallery {
     position: relative;
     top: 0;
 }
+
 .arrow {
     position: fixed;
     top: 50%;
@@ -563,10 +613,32 @@ body {
     z-index: 1200;
     display: none;
 }
+
 .arrow-right {
     right: 10px;
 }
 
 .arrow-left {
     left: 10px;
+}
+
+
+/* Video Player */
+
+.video-player {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
+}
+
+.video-player iframe {
+    width: 70%;
+    aspect-ratio: 16 / 9;
 }

@@ -10,7 +10,8 @@ include 'assets/php/components/nav.php';
     include 'assets/php/components/s4.php';
     ?>
     <div class="section container-lg g-0 s5" data-anchor="portfolio">
-        <div class="s5-container">
+        <div class="s5-container border">
+
         </div>
     </div>
     <div class="section container border s6" data-anchor="contact"></div>
